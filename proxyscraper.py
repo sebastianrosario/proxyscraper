@@ -40,6 +40,7 @@ def write_to_proxy(arr):
 if __name__ == "__main__":
     if len(sys.argv) == 3: 
         proxy_arr = []
+        u_socket_type = u_socket_type.lower()
         
         proxy_arr += find_ip(u_url)
         formatted_arr = arr_to_final(proxy_arr, u_socket_type)
